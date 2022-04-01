@@ -39,7 +39,7 @@ for element in wariaiLabel:
 if driver.find_element_by_xpath("//*[@id='MainContent_SubjectSyllabus_UpdatePanelSyllabus']/div/table/tbody/tr[6]/td[1]").text == "通年":
     annual = "true"
 
-print(",\n    {\n        subject:\"" + subject + "\",\n        regularExam:" + regularExam + ",\n        littleExam:" + littleExam +
-      ",\n        report:" + report + ",\n        attitude:" + attitude + ",\n        others:" + others + ",\n        annual:" + annual + "\n    }")
+print(",\n    {\n        subject: \"" + subject + "\",\n        regularExam: " + regularExam + ",\n        littleExam: " + littleExam +
+      ",\n        report: " + report + ",\n        attitude: " + attitude + ",\n        others: " + others + ",\n        annual: " + annual + "\n    }")
 
 driver.quit()
