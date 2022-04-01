@@ -29,7 +29,7 @@ for element in wariaiLabel:
         regularExam = wariaiValue[count].text
     if "小テスト" == element.text:
         littleExam = wariaiValue[count].text
-    if "レポート" in element.text or "ポートフォリオ" == element.text:
+    if "レポート" in element.text or "ポートフォリオ" in element.text:
         report = wariaiValue[count].text
     if "発表" in element.text:
         attitude = wariaiValue[count].text
