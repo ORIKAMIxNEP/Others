@@ -1,0 +1,6 @@
+相対速度
+そうたいそくど
+sotaisokudo
+Relative velocity
+The velocity of an object or observer B in the rest frame of another object or observer A.
+\
