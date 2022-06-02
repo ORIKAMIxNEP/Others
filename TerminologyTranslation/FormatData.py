@@ -13,6 +13,9 @@ with open("data/" + subjectData[subject] + "Data.txt", "r", encoding="utf-8") as
         if i % 6 == 1:
             roman = requests.get(
                 "https://www.seonet.jp/useful/hebon/api.php?bmp=yes&word=" + terminologyDataLine).text.replace("<br>", "")
+            if roman == "Limit":
+                print("API Limit")
+                exit()
         elif i % 6 == 2:
             if terminologyDataLine != roman + "\n":
                 terminologyData += roman + "\n" + \

@@ -8,7 +8,7 @@ Surveying to determine position and height. The distance of each side of a trian
 へいめんそくりょう
 heimensokuryo
 Plane surveying
-survey of a small area. It does not take into account that the earth is a sphere (curved plane), but assumes that the land is flat.
+Survey of a small area. It does not take into account that the earth is a sphere (curved plane), but assumes that the land is flat.
 ,
 大地測量
 だいちそくりょう
