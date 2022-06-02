@@ -11,19 +11,19 @@ ACCESS_TOKEN_SECRET = config["ACCESS_TOKEN_SECRET"]
 client = tweepy.Client(BEARER_TOKEN, API_KEY, API_SECRET,
                        ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
-searchText = "タコピー"
+searchText = "タコピーの原罪"
 next_token = ""
 allTweetsCount = 0
 extractedTweetsCount = 0
-for i in range(1):
+for i in range(5):
     if i == 0:
         tweets = client.search_recent_tweets(
-            query=searchText, max_results=10, tweet_fields=["entities", "lang", "public_metrics"])
+            query=searchText, max_results=100, tweet_fields=["entities", "lang", "public_metrics"])
     else:
         tweets = client.search_recent_tweets(
-            query=searchText, max_results=10, next_token=next_token, tweet_fields=["lang", "public_metrics"])
+            query=searchText, max_results=10, next_token=next_token, tweet_fields=["entities", "lang", "public_metrics"])
     for tweet in tweets.data:
-        if tweet.lang == "ja" and (tweet.entities is None or "mentions" not in tweet.entities):
+        if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)):
             print("-------------------------------------------")
             print(tweet.text)
             print("fav:" + str(tweet.public_metrics["like_count"]))
@@ -34,5 +34,6 @@ for i in range(1):
     else:
         next_token = tweets.meta["next_token"]
 
+print("-------------------------------------------")
 print("AllTweet:" + str(allTweetsCount))
 print("ExtractedTweet:" + str(extractedTweetsCount))
