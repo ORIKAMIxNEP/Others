@@ -1,6 +1,30 @@
 旋盤
 せんばん
 semban
-Lathe
-Machine tool that rotates a workpiece about an axis of rotation to perform various operations such as cutting, sanding, knurling, drilling, deformation, facing, and turning, with tools that are applied to the workpiece to create an object with symmetry about that axis.
+Lathe, Turning machine
+A turning machine is one of the machine tools that rotates the work piece and cuts it with a fixed tool called a cutting tool.
+,
+フライス盤
+ふらいすばん
+furaisuban
+Fraise, Milling machine
+A milling machine is a machine tool that cuts flat surfaces, grooves, gears, etc. by rotating a cutting tool called a milling cutter attached to a rotating shaft and moving the milling cutter.
+,
+ボール盤
+ぼーるばん
+boruban
+Drilling machine
+A drilling machine is a machine tool for accurately drilling holes in various materials. Place the material to be machined on a table, rotate a cutting tool such as a drill or reamer attached to the spindle, and lower the spindle toward the material to make a hole.
+,
+溶接
+ようせつ
+yosetsu
+Welding
+Welding is a fabrication process that joins materials, usually metals or thermoplastics, by using high heat to melt the parts together and allowing them to cool, causing fusion.
+,
+鋳造
+ちゅうぞう
+chuzo
+Casting
+Casting is a manufacturing process in which a liquid material is usually poured.
 ,
