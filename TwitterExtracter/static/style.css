@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+    margin: 5vh 35vw;
+}
+
+p {
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
