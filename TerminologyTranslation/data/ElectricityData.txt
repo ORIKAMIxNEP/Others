@@ -1,0 +1,60 @@
+電気
+でんき
+denki
+Electricity
+Electricity is the set of physical phenomena associated with the presence and motion of matter that has a property of electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations.
+,
+電流
+でんりゅう
+denryu
+Electric current
+An electric current is a stream of charged particles, such as electrons or ions, moving through an electrical conductor or space. It is measured as the net rate of flow of electric charge through a surface or into a control volume.
+,
+電圧
+でんあつ
+denatsu
+Voltage
+Voltage, electric potential difference, electric pressure or electric tension is the difference in electric potential between two points, which (in a static electric field) is defined as the work needed per unit of charge to move a test charge between the two points.
+,
+電子
+でんし
+denshi
+Electron
+The electron is a subatomic particle whose electric charge is negative one elementary charge.
+,
+直流
+ちょくりゅう
+chokuryu
+Direct current 
+Direct current is a ""direct current"" whose magnitude varies with time but the direction of flow (positive or negative) does not.
+,
+交流
+こうりゅう
+koryu
+Alternating current
+In electrical engineering, alternating current is a current or voltage that periodically changes in magnitude and direction over time.
+,
+電気抵抗
+でんきていこう
+denkiteiko
+Electric resistance
+The electrical resistance of an object is a measure of its opposition to the flow of electric current.
+,
+リアクタンス
+りあくたんす
+riakutansu
+Reactance
+Electrical reactance, the opposition to a change in voltage due to capacitance (capacitive reactance) or in current due to inductance (inductive reactance); the imaginary component of AC impedance.
+,
+コンデンサ
+こんでんさ
+kondensa
+Capacitor
+A capacitor is a device that stores electrical energy in an electric field. It is a passive electronic component with two terminals.
+,
+発光ダイオード(LED)
+はっこうだいおーど
+hatsukodaiodo
+Light emitting diode
+A light-emitting diode (LED) is a semiconductor light source that emits light when current flows through it. Electrons in the semiconductor recombine with electron holes, releasing energy in the form of photons.
+,
