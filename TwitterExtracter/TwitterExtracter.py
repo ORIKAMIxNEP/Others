@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 import json
 import tweepy
@@ -21,7 +21,7 @@ def TwitterExtracter():
     client = tweepy.Client(BEARER_TOKEN, API_KEY, API_SECRET,
                            ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
-    searchText = "タコピーの原罪"
+    searchText = request.args.get("word")
     next_token = ""
     allTweetsCount = 0
     extractedTweetsCount = 0
