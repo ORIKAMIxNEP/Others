@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:50001/") // API呼び出し
+fetch("http://172.31.50.223:50001/") // API呼び出し
   .then(function (data) {
     return data.json(); // json形式で読み込む
   })
