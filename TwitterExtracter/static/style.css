@@ -1,9 +1,12 @@
 body {
-    font-family: sans-serif;
     margin: 5vh 35vw;
+    font-family: sans-serif;
 }
 
-p, input{
+p, input {
+    margin-top: auto;
+    font: optional;
+
     margin-block-start: 2em;
     margin-block-end: 2em;
 }
