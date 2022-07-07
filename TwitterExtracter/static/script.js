@@ -4,15 +4,15 @@ function search() {
       document.getElementById("search").value
   ) // API呼び出し
     .then(function (data) {
-      return data.json(); // json形式で読み込む
+      return data.json();
     })
     .then(function (TweetsData) {
-      let tweetsHTML = ""; // HTMLに入れるデータの変数
+      let tweetsHTML = "";
       for (let i = 0; i < TweetsData.tweets.length; i++) {
-        console.log(TweetsData.tweets[i].tweet); // ツイートの文章
-        console.log(TweetsData.tweets[i].favorite); // ツイートのいいね数
-        tweetsHTML += "<p>" + TweetsData.tweets[i].tweet + "<p>"; // ツイートデータをHTML用データに格納
-        tweets.innerHTML = tweetsHTML; // HTML用データをHTML(id:tweets)に反映
+        console.log(TweetsData.tweets[i].tweet);
+        console.log(TweetsData.tweets[i].favorite);
+        tweetsHTML += "<p>" + TweetsData.tweets[i].tweet + "<p>";
+        tweets.innerHTML = tweetsHTML;
       }
     });
 }
