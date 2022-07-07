@@ -2,7 +2,7 @@ function search() {
   fetch(
     "http://172.31.50.223:50001/?word=" +
       document.getElementById("search").value
-  ) // API呼び出し
+  )
     .then(function (data) {
       return data.json();
     })
