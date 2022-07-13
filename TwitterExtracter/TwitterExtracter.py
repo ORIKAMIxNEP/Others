@@ -50,6 +50,7 @@ def TwitterExtracter():
     print("-------------------------------------------")
     print("AllTweet:" + str(allTweetsCount))
     print("ExtractedTweet:" + str(extractedTweetsCount))
+    print(TweetsData)
     return TweetsData
 
 
