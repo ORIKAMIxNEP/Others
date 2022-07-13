@@ -5,7 +5,6 @@ body {
 
 p, input {
     margin-top: auto;
-    font: optional;
 
     margin-block-start: 2em;
     margin-block-end: 2em;
