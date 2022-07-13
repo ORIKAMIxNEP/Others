@@ -1,9 +1,7 @@
 function search() {
   fetch(
     "http://172.31.50.223:50001/?word=" +
-      document.getElementById("search").value +
-      "&favorite=" +
-      document.getElementById("favorite").value
+      document.getElementById("search").value
   )
     .then(function (data) {
       return data.json();
