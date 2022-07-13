@@ -26,7 +26,7 @@ def TwitterExtracter():
     allTweetsCount = 0
     extractedTweetsCount = 0
     TweetsData = {"tweets": []}
-    for i in range(5):
+    for i in range(10):
         if i == 0:
             tweets = client.search_recent_tweets(
                 query=searchText, max_results=100, tweet_fields=["entities", "lang", "public_metrics"])
