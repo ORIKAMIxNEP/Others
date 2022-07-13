@@ -7,12 +7,21 @@ function search() {
       return data.json();
     })
     .then(function (TweetsData) {
+      let tweetsLimit = document.getElementById("tweetsLimit").value;
+      let favoriteLimit = document.getElementById("favorite").value;
       let tweetsHTML = "";
-      for (let i = 0; i < TweetsData.tweets.length; i++) {
-        console.log(TweetsData.tweets[i].tweet);
-        console.log(TweetsData.tweets[i].favorite);
-        tweetsHTML += "<p>" + TweetsData.tweets[i].tweet + "<p>";
-        tweets.innerHTML = tweetsHTML;
+      for (let i = 0; i < tweetsLimit; i++) {
+        if (TweetsData.tweets[i].favorite >= favoriteLimit) {
+          console.log(TweetsData.tweets[i].tweet);
+          console.log(TweetsData.tweets[i].favorite);
+          tweetsHTML +=
+            "<p>" +
+            TweetsData.tweets[i].tweet +
+            "<br>❤ " +
+            TweetsData.tweets[i].favorite +
+            "<p>";
+          tweets.innerHTML = tweetsHTML;
+        }
       }
     });
 }
