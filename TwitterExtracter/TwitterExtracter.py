@@ -23,9 +23,7 @@ def TwitterExtracter():
                            ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
     searchText = request.args.get("word")
-    print(request.args.get("word"))
     favoriteCount = int(request.args.get("favorite"))
-    print(request.args.get("favorite"))
     next_token = ""
     allTweetsCount = 0
     extractedTweetsCount = 0

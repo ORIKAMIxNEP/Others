@@ -2,7 +2,7 @@ function search() {
   fetch(
     "http://172.31.50.223:50001/?word=" +
       document.getElementById("search").value +
-      "&?favorite=" +
+      "&favorite=" +
       document.getElementById("favorite").value
   )
     .then(function (data) {
