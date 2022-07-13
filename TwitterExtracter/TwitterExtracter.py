@@ -1,3 +1,4 @@
+import requests
 from flask import Flask, request
 from flask_cors import CORS
 import json
@@ -22,6 +23,7 @@ def TwitterExtracter():
                            ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
     searchText = request.args.get("word")
+    favoriteCount = request.args.get("favorite")
     next_token = ""
     allTweetsCount = 0
     extractedTweetsCount = 0
@@ -34,7 +36,7 @@ def TwitterExtracter():
                 query=searchText, max_results=100, next_token=next_token, tweet_fields=["entities", "lang", "public_metrics"])
         TweetsData = {"tweets": []}
         for tweet in tweets.data:
-            if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)):
+            if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)) and tweet.public_metrics["like_count"] >= favoriteCount:
                 print("-------------------------------------------")
                 print(tweet.text)
                 print("fav:" + str(tweet.public_metrics["like_count"]))
