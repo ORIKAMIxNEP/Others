@@ -25,6 +25,7 @@ def TwitterExtracter():
     next_token = ""
     allTweetsCount = 0
     extractedTweetsCount = 0
+    TweetsData = {"tweets": []}
     for i in range(5):
         if i == 0:
             tweets = client.search_recent_tweets(
@@ -32,17 +33,13 @@ def TwitterExtracter():
         else:
             tweets = client.search_recent_tweets(
                 query=searchText, max_results=20, next_token=next_token, tweet_fields=["entities", "lang", "public_metrics"])
-        TweetsData = {"tweets": []}
         for tweet in tweets.data:
             if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)):
                 print("-------------------------------------------")
                 print(tweet.text)
                 print("fav:" + str(tweet.public_metrics["like_count"]))
-                print(
-                    dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
                 TweetsData["tweets"].append(
                     dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
-                print(TweetsData)
                 extractedTweetsCount += 1
             allTweetsCount += 1
         if "next_token" not in tweets.meta:
