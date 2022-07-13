@@ -38,7 +38,7 @@ def TwitterExtracter():
                 print("-------------------------------------------")
                 print(tweet.text)
                 print("fav:" + str(tweet.public_metrics["like_count"]))
-                TweetsData["tweets"].append(
+                TweetsData["tweets"].update(
                     dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
                 extractedTweetsCount += 1
             allTweetsCount += 1
