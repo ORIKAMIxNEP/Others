@@ -29,10 +29,10 @@ def TwitterExtracter():
     for i in range(5):
         if i == 0:
             tweets = client.search_recent_tweets(
-                query=searchText, max_results=20, tweet_fields=["entities", "lang", "public_metrics"])
+                query=searchText, max_results=100, tweet_fields=["entities", "lang", "public_metrics"])
         else:
             tweets = client.search_recent_tweets(
-                query=searchText, max_results=20, next_token=next_token, tweet_fields=["entities", "lang", "public_metrics"])
+                query=searchText, max_results=100, next_token=next_token, tweet_fields=["entities", "lang", "public_metrics"])
         for tweet in tweets.data:
             if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)):
                 print("-------------------------------------------")
