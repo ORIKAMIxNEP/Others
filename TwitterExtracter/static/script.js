@@ -3,7 +3,7 @@ function search() {
     "http://172.31.50.223:50001/?word=" +
       document.getElementById("search").value +
       "&?favorite=" +
-      document.getElementById("favorite")
+      document.getElementById("favorite").value
   )
     .then(function (data) {
       return data.json();
