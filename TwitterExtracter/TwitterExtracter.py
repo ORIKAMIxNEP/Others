@@ -38,8 +38,11 @@ def TwitterExtracter():
                 print("-------------------------------------------")
                 print(tweet.text)
                 print("fav:" + str(tweet.public_metrics["like_count"]))
+                print(
+                    dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
                 TweetsData["tweets"].append(
                     dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
+                print(TweetsData)
                 extractedTweetsCount += 1
             allTweetsCount += 1
         if "next_token" not in tweets.meta:
