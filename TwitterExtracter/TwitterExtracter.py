@@ -37,7 +37,7 @@ def TwitterExtracter():
             if tweet.lang == "ja" and (tweet.entities is None or ("mentions" not in tweet.entities and "urls" not in tweet.entities)):
                 print("-------------------------------------------")
                 print(tweet.text)
-                print("fav:" + str(tweet.public_metrics["like_count"]))
+                print("favorite:" + str(tweet.public_metrics["like_count"]))
                 TweetsData["tweets"].append(
                     dict({"tweet": tweet.text, "favorite": tweet.public_metrics["like_count"]}))
                 extractedTweetsCount += 1
@@ -47,7 +47,7 @@ def TwitterExtracter():
         else:
             next_token = tweets.meta["next_token"]
 
-    print("-------------------------------------------")
+    print("----------------------------------------")
     print("AllTweet:" + str(allTweetsCount))
     print("ExtractedTweet:" + str(extractedTweetsCount))
     print(TweetsData)
