@@ -1,11 +1,31 @@
-body {
-    margin: 5vh 35vw;
-    font-family: sans-serif;
+.flat.border {
+    position: relative;
+    width: 100%;
+    max-width: 70px;
+    padding: 10px;
+    border: 2px solid #3399ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #ffffff;
+    color: #3399ff;
+    font-weight: bold;
+    text-align: center;
+    transition: .3s;
+}
+.flat.border:hover {
+    background: #3399ff;
+    color: #ffffff;
+}
+.flat.border:active, .flat.border:focus {
+    top: 2px;
 }
 
-p, input {
-    margin-top: auto;
-
-    margin-block-start: 2em;
-    margin-block-end: 2em;
+.radius {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+.radius:focus {
+    border-color: #5db0ff;
+    outline: 0;
 }
