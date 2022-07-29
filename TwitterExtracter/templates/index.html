@@ -1,74 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="static/style.css">
     <title>Test</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src ="static/animation.js"></script>
-</head>
-<body>
-  <div class="boxes">
-    <div class="content">
-
-      <header>
-        <h1>～感想一覧化ツール～</h1>
-
-      </header>
-
-      <div class="frame">
-        <input type="text" class="text" placeholder="検索ワード" id="search" >
-        <span for="search">キーワード検索</span>
-
-        <br>
-
-        <br>
-
-        <input type="number" class="text"placeholder="閾値" min="0" id="favorite">
-        <span for="favorite">いいね数指定</span>
-        <br>
-
-        <label for="tweet_num">ツイート数指定</label>
-        <div class="range-container">
-            <input type="range" min ="0" max = "100" id="tweet_num" >
-            <label for="range">50</label>
-        </div>
-
-        <input type="button" onclick="search();btn_click();" value="検索" class="reset flat border">
-        <br>
-      </div>
-
-      <div class="add-control">
-        <input type="checkbox" class="chk" id="open-close" name="btn"><label class="btn btn-open-close" for="open-close">
-          <p class="open">一覧を開く</p>
-          <p class="close">一覧を閉じる</p>
-        </label>
-          <div class="tweets_content">
-            <label class="Label" for="block">
-              <div class='loading'>
-                <div class='bullet'></div>
-                <div class='bullet'></div>
-                <div class='bullet'></div>
-                <div class='bullet'></div>
-              </div>
-            </label>
-            <div class="contents">
-              <div class="box fadeUp">
-                <div class="animation">
-                  <div class="bg">
-                    <h2>ツイート一覧</h2>
-                    <div id="tweets"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <script src ="static/api_calls.js"></script>
-  <script src ="static/slider.js"></script>
+  </head>
+  <body>
+    <script src="static/script.js"></script>
   </body>
 </html>
