@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <title>SyllabusScraper</title>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <p id="navigation">↓シラバスの科目ページのURLを入力</p>
+    <button type="button" id="quit" onclick="QuitDriver()">終了</button>
+    <input type="url" id="url" placeholder="https://syllabus.kosen-k.go.jp/Pages/..." readonly>
+    <button type=”button” id="paste" onclick="paste()">ペーストする</button>
+    <p id="message">
+        出力をグリップボードにコピーしました
+        <br>
+        5秒後にリセットされます
+    </p>
+    <pre id="result"></pre>
+</body>
+
+</html>
