@@ -1,5 +1,6 @@
 import eel
-from ScrapeSyllabus import ScrapeSyllabus, QuitDriver
+
+from ScrapeSyllabus import QuitDriver, ScrapeSyllabus
 
 
 @eel.expose
