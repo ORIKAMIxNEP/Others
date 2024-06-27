@@ -1,1 +1,1 @@
-# syllabus-scraper
+# Syllabus Scraper
